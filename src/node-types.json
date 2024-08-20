@@ -1,0 +1,244 @@
+[
+  {
+    "type": "change_category",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "change_category_name",
+          "named": true
+        },
+        {
+          "type": "change_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "change_category_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "change_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "change_text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "change_text",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "changes_body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "change_category",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "date",
+    "named": true,
+    "fields": {
+      "date": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "date_literal",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "date_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "version_changelog",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "version",
+    "named": true,
+    "fields": {
+      "version": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "version_literal",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "version_changelog",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "changes_body",
+          "named": true
+        },
+        {
+          "type": "date",
+          "named": true
+        },
+        {
+          "type": "delimeter",
+          "named": true
+        },
+        {
+          "type": "version",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Balancing:",
+    "named": false
+  },
+  {
+    "type": "Bugfixes:",
+    "named": false
+  },
+  {
+    "type": "Changes:",
+    "named": false
+  },
+  {
+    "type": "Circuit Network:",
+    "named": false
+  },
+  {
+    "type": "Combat Balancing:",
+    "named": false
+  },
+  {
+    "type": "Control:",
+    "named": false
+  },
+  {
+    "type": "Date: ",
+    "named": false
+  },
+  {
+    "type": "Debug:",
+    "named": false
+  },
+  {
+    "type": "Ease of use:",
+    "named": false
+  },
+  {
+    "type": "Features:",
+    "named": false
+  },
+  {
+    "type": "Graphics:",
+    "named": false
+  },
+  {
+    "type": "Gui:",
+    "named": false
+  },
+  {
+    "type": "Info:",
+    "named": false
+  },
+  {
+    "type": "Locale:",
+    "named": false
+  },
+  {
+    "type": "Major Features:",
+    "named": false
+  },
+  {
+    "type": "Minor Features:",
+    "named": false
+  },
+  {
+    "type": "Modding:",
+    "named": false
+  },
+  {
+    "type": "Optimisations:",
+    "named": false
+  },
+  {
+    "type": "Optimizations:",
+    "named": false
+  },
+  {
+    "type": "Other:",
+    "named": false
+  },
+  {
+    "type": "Scripting:",
+    "named": false
+  },
+  {
+    "type": "Sounds:",
+    "named": false
+  },
+  {
+    "type": "Translation:",
+    "named": false
+  },
+  {
+    "type": "Version: ",
+    "named": false
+  },
+  {
+    "type": "delimeter",
+    "named": true
+  },
+  {
+    "type": "version_literal",
+    "named": true
+  }
+]
